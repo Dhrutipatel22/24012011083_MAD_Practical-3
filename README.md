@@ -450,7 +450,9 @@ startActivity(intent)
 ---
 
 # Output
-<img width="333" height="595" alt="image" src="https://github.com/user-attachments/assets/ecb62fe6-2fca-4756-8e7c-9b038d3d2cba" />   <img width="333" height="595" alt="image" src="https://github.com/user-attachments/assets/1233e26e-ec6f-4b0e-854c-1c056b6b86e2" />
+<img width="333" height="595" alt="image" src="https://github.com/user-attachments/assets/d3938dab-6d44-4aac-bae9-7a987820e5d8" />
+  <img width="333" height="595" alt="image" src="https://github.com/user-attachments/assets/84531f95-c190-4e84-96ab-c0d82ac3f3e0" />
+
 
 
 
