@@ -3,6 +3,8 @@ package com.example.a24012011083_mad_practical_3
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.provider.AlarmClock
+import android.provider.MediaStore
 import android.widget.Button
 import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
@@ -43,8 +45,36 @@ class MainActivity : AppCompatActivity() {
             intent.setData("tel:$number".toUri())
             startActivity(intent) }
 
+        findViewById<Button>(R.id.btn_CallLog).setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("content://call_log/calls"))
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.btn_Gallery).setOnClickListener {
+            val intent = Intent(Intent.ACTION_PICK)
+            intent.type= "image/*"
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.btn_Camara).setOnClickListener {
+            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.btn_Alarm).setOnClickListener {
+            val intent = Intent(AlarmClock.ACTION_SET_ALARM).apply {
+                putExtra(AlarmClock.EXTRA_HOUR, 7)
+                putExtra(AlarmClock.EXTRA_MINUTES, 0)
+            }
+
+            if (intent.resolveActivity(packageManager) != null) {
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "No Alarm app found", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
     fun ExplicitIntent(){
-
+        findViewById<Button>(R.id.btn_Login).setOnClickListener {
+            val intent = Intent(this, LoginActivity :: class.java)
+            startActivity(intent)
+        }
     }
 }
