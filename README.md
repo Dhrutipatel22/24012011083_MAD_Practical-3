@@ -127,40 +127,9 @@ Example:
     android:layout_height="wrap_content"
     android:text="Open Gallery" />
 ```
-
 ---
 
-## 7. ConstraintLayout
-
-`ConstraintLayout` is an Android layout that allows UI elements to be positioned using constraints relative to the parent or other views.
-
-Example:
-
-```xml
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-</androidx.constraintlayout.widget.ConstraintLayout>
-```
-
----
-
-## 8. CoordinatorLayout
-
-`CoordinatorLayout` is a ViewGroup that helps coordinate interactions between child views.
-
-Example:
-
-```xml
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
-```
-
----
-
-## 9. `startActivity()`
+## 7. `startActivity()`
 
 `startActivity()` starts another Activity using an Intent.
 
@@ -172,7 +141,7 @@ startActivity(intent)
 
 ---
 
-## 10. ActivityResultContracts
+## 8. ActivityResultContracts
 
 `ActivityResultContracts` provides predefined contracts for launching activities and receiving results.
 
@@ -189,7 +158,7 @@ galleryLauncher.launch("image/*")
 
 ---
 
-## 11. Permission in Manifest
+## 9. Permission in Manifest
 
 Some Android operations require permissions to be declared in `AndroidManifest.xml`.
 
@@ -201,7 +170,7 @@ For making a phone call:
 
 ---
 
-## 12. `ContextCompat.checkSelfPermission()`
+## 10. `ContextCompat.checkSelfPermission()`
 
 This method checks whether an application has a particular permission.
 
@@ -216,7 +185,7 @@ ContextCompat.checkSelfPermission(
 
 ---
 
-## 13. `ActivityCompat.requestPermissions()`
+## 11. `ActivityCompat.requestPermissions()`
 
 This method requests permission from the user at runtime.
 
@@ -232,7 +201,7 @@ ActivityCompat.requestPermissions(
 
 ---
 
-## 14. `Uri.parse()`
+## 12. `Uri.parse()`
 
 `Uri.parse()` converts a String into a URI object.
 
@@ -250,7 +219,7 @@ val uri = Uri.parse("tel:9876543210")
 
 ---
 
-## 15. `ContactsContract.Contacts.CONTENT_TYPE`
+## 13. `ContactsContract.Contacts.CONTENT_TYPE`
 
 This represents the content type used for contacts.
 
@@ -262,7 +231,7 @@ intent.type = ContactsContract.Contacts.CONTENT_TYPE
 
 ---
 
-## 16. `CallLog.Calls.CONTENT_TYPE`
+## 14. `CallLog.Calls.CONTENT_TYPE`
 
 This represents the content type associated with the device's call log.
 
@@ -274,7 +243,7 @@ intent.type = CallLog.Calls.CONTENT_TYPE
 
 ---
 
-## 17. `"image/*"`
+## 15. `"image/*"`
 
 `image/*` represents image MIME types.
 
@@ -286,7 +255,7 @@ intent.type = "image/*"
 
 ---
 
-## 18. `"tel:"`
+## 16. `"tel:"`
 
 The `tel:` URI scheme is used for telephone numbers.
 
